@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/btc_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BTC" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@color/grey" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ethereum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="ETHEREUM BALANCE" />
+
+        <LinearLayout
+            android:id="@+id/eth_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/btc_layout"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/eth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ETH" />
+
+            <View
+                android:layout_width="35dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@color/violet" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ltc_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/eth_layout"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ltc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LTC" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@color/grey" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ltc_layout"
+            android:layout_alignEnd="@+id/ethereum"
+            android:layout_alignRight="@+id/ethereum"
+            android:text="23.97642"
+            android:textColor="@color/violet"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/stm_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/ltc_layout"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/stm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STM" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/dollar_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="$ 5976.47"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dsh_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/stm_layout"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dsh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DSH" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@color/grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/eth_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/dsh_layout"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 ETH = " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0916 BTC"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/day_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/eth_value"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAY " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.98 %"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/week_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/day_value"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WEEK " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.65 %"
+                android:textColor="@color/green"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/transaction_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/week_value"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/send"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:drawablePadding="15dp"
+                android:drawableTop="@drawable/sendicon"
+                android:gravity="center"
+                android:text="SEND"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/receive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/receiveicon"
+                android:gravity="center"
+                android:text="RECEIVE"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/buyorsell"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/transfericon"
+                android:gravity="center"
+                android:text="BUY/SELL"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/transaction_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/transaction_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:text="Transaction History"
+                android:textAllCaps="true" />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ListView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
